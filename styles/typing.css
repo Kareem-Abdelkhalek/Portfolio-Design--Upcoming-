@@ -1,0 +1,16 @@
+.hero-subtitle {
+  font-size: 32px;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 50px;
+  animation: fadeInUp 1s 0.6s backwards;
+  letter-spacing: 2px;
+  overflow: hidden;
+  border-right: 3px solid rgba(255, 255, 255, 0.7);
+  white-space: nowrap;
+  display: inline-block;
+}
+
+.hero-subtitle.typing-complete {
+  border-right: none;
+}

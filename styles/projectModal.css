@@ -1,0 +1,241 @@
+.project-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 99999; /* Changed from 10000 */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s;
+}
+
+.project-modal.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.95);
+  backdrop-filter: blur(10px);
+}
+
+.modal-content {
+  position: relative;
+  max-width: 800px;
+  width: 90%;
+  max-height: 90vh;
+  overflow-y: auto;
+  background: #0a0a0a;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  z-index: 1;
+  transform: scale(0.8);
+  transition: 0.3s;
+}
+
+.project-modal.active .modal-content {
+  transform: scale(1);
+}
+
+.modal-close {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  width: 50px;
+  height: 50px;
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  cursor: pointer;
+  transition: 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+}
+
+.modal-close:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: #fff;
+  transform: rotate(90deg);
+}
+
+.modal-close svg {
+  stroke: #fff;
+}
+
+.modal-body {
+  padding: 80px 60px;
+}
+
+.modal-title {
+  font-size: 48px;
+  font-weight: 900;
+  letter-spacing: -2px;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+.modal-category {
+  font-size: 14px;
+  letter-spacing: 3px;
+  color: rgba(255, 255, 255, 0.5);
+  text-transform: uppercase;
+  margin-bottom: 40px;
+  font-weight: 600;
+}
+
+.modal-description {
+  font-size: 18px;
+  line-height: 1.8;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 40px;
+}
+
+.modal-tech h3 {
+  font-size: 14px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.modal-tech-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 40px;
+}
+
+.modal-tech-item {
+  padding: 10px 20px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.modal-links {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.modal-btn {
+  padding: 20px 50px;
+  background: #fff;
+  color: #000;
+  text-decoration: none;
+  font-size: 12px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  font-weight: 700;
+  border: 2px solid #fff;
+  transition: 0.3s;
+  display: inline-block;
+}
+
+.modal-btn:hover {
+  background: transparent;
+  color: #fff;
+}
+
+.modal-btn-secondary {
+  background: transparent;
+  color: #fff;
+}
+
+.modal-btn-secondary:hover {
+  background: #fff;
+  color: #000;
+}
+
+body.light-mode .modal-overlay {
+  background: rgba(255, 255, 255, 0.95);
+}
+
+body.light-mode .modal-content {
+  background: #fff;
+  border-color: rgba(0, 0, 0, 0.2);
+}
+
+body.light-mode .modal-close {
+  border-color: rgba(0, 0, 0, 0.3);
+}
+
+body.light-mode .modal-close:hover {
+  background: rgba(0, 0, 0, 0.1);
+  border-color: #000;
+}
+
+body.light-mode .modal-close svg {
+  stroke: #000;
+}
+
+body.light-mode .modal-title {
+  color: #000;
+}
+
+body.light-mode .modal-description {
+  color: rgba(0, 0, 0, 0.7);
+}
+
+body.light-mode .modal-tech-item {
+  background: rgba(0, 0, 0, 0.05);
+  border-color: rgba(0, 0, 0, 0.2);
+}
+
+body.light-mode .modal-btn {
+  background: #000;
+  color: #fff;
+  border-color: #000;
+}
+
+body.light-mode .modal-btn:hover {
+  background: transparent;
+  color: #000;
+}
+
+body.light-mode .modal-btn-secondary {
+  background: transparent;
+  color: #000;
+}
+
+body.light-mode .modal-btn-secondary:hover {
+  background: #000;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .modal-body {
+    padding: 60px 30px;
+  }
+
+  .modal-title {
+    font-size: 32px;
+  }
+
+  .modal-close {
+    top: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+  }
+
+  .modal-links {
+    flex-direction: column;
+  }
+
+  .modal-btn {
+    text-align: center;
+  }
+}

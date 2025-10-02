@@ -1,0 +1,831 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KAREEM - FRONT-END DEVELOPER</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/global.css" />
+    <link rel="stylesheet" href="styles/header.css" />
+    <link rel="stylesheet" href="styles/hero.css" />
+    <link rel="stylesheet" href="styles/about.css" />
+    <link rel="stylesheet" href="styles/skills.css" />
+    <link rel="stylesheet" href="styles/services.css" />
+    <link rel="stylesheet" href="styles/projects.css" />
+    <link rel="stylesheet" href="styles/contact.css" />
+    <link rel="stylesheet" href="styles/footer.css" />
+    <link rel="stylesheet" href="styles/loader.css" />
+    <link rel="stylesheet" href="styles/progressBar.css" />
+    <link rel="stylesheet" href="styles/typing.css" />
+    <link rel="stylesheet" href="styles/themeToggle.css" />
+    <link rel="stylesheet" href="styles/particles.css" />
+    <link rel="stylesheet" href="styles/testimonials.css" />
+    <link rel="stylesheet" href="styles/scrollToTop.css" />
+    <link rel="stylesheet" href="styles/experience.css" />
+    <link rel="stylesheet" href="styles/projectModal.css" />
+  </head>
+  <body>
+    <!-- Loading Screen -->
+    <div class="loader-wrapper">
+      <div>
+        <div class="loader"></div>
+        <div class="loader-text">Loading</div>
+      </div>
+    </div>
+
+    <!-- Scroll Progress Bar -->
+    <div class="progress-bar"></div>
+
+    <!-- Theme Toggle Button -->
+    <button class="theme-toggle">
+      <svg
+        class="moon-icon"
+        fill="none"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        viewBox="0 0 24 24"
+      >
+        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+      </svg>
+      <svg
+        class="sun-icon"
+        style="display: none"
+        fill="none"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        viewBox="0 0 24 24"
+      >
+        <circle cx="12" cy="12" r="5"></circle>
+        <line x1="12" y1="1" x2="12" y2="3"></line>
+        <line x1="12" y1="21" x2="12" y2="23"></line>
+        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+        <line x1="1" y1="12" x2="3" y2="12"></line>
+        <line x1="21" y1="12" x2="23" y2="12"></line>
+        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+      </svg>
+    </button>
+
+    <!-- Header -->
+    <header>
+      <div class="logo">KAREEM</div>
+      <button class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav id="nav">
+        <ul>
+          <li><a href="#hero" class="active">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#projects">Work</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Hero -->
+    <section id="hero">
+      <div class="hero-bg-overlay"></div>
+      <div class="particles-container"></div>
+      <div class="hero-content">
+        <div class="hero-label">FRONT-END DEVELOPER</div>
+        <h1 class="hero-title">KAREEM</h1>
+        <p class="hero-subtitle">BUILDING DIGITAL EXPERIENCES</p>
+        <a href="#projects" class="hero-cta">View Work</a>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about">
+      <div class="section-number">01</div>
+      <div class="about-container">
+        <div class="about-img reveal">
+          <img
+            src="images/upscalemedia-transformed-removebg-preview.png"
+            alt="Kareem"
+          />
+        </div>
+        <div class="about-text reveal">
+          <div class="section-label">Who I Am</div>
+          <h2 class="section-title">ABOUT ME</h2>
+          <p>
+            I'M A FRONT-END DEVELOPER PASSIONATE ABOUT CREATING STUNNING DIGITAL
+            EXPERIENCES THAT PUSH THE BOUNDARIES OF DESIGN AND FUNCTIONALITY.
+          </p>
+          <p>
+            WITH A KEEN EYE FOR DETAIL AND A DRIVE FOR PERFECTION, I TRANSFORM
+            IDEAS INTO REALITY THROUGH CODE AND CREATIVITY.
+          </p>
+          <div class="about-stats">
+            <div class="stat-item">
+              <div class="stat-number">50+</div>
+              <div class="stat-label">Projects</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number">1+</div>
+              <div class="stat-label">Years Exp</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number">100%</div>
+              <div class="stat-label">Dedication</div>
+            </div>
+          </div>
+          <a
+            href="files/Kareem-CV.pdf"
+            download="Kareem-CV.pdf"
+            class="cv-download-btn reveal"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+              <polyline points="7 10 12 15 17 10"></polyline>
+              <line x1="12" y1="15" x2="12" y2="3"></line>
+            </svg>
+            DOWNLOAD CV
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section id="experience">
+      <div class="section-number">02</div>
+      <div class="experience-container">
+        <div class="section-label reveal">My Journey</div>
+        <h2 class="section-title reveal">EXPERIENCE</h2>
+
+        <div class="timeline">
+          <div class="timeline-item reveal">
+            <div class="timeline-date">2024 - PRESENT</div>
+            <div class="timeline-content">
+              <h3 class="timeline-title">FREELANCE DEVELOPER</h3>
+              <p class="timeline-company">SELF-EMPLOYED</p>
+              <p class="timeline-desc">
+                Building custom websites and web applications for clients
+                worldwide. Specializing in responsive design and modern frontend
+                technologies.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-item reveal">
+            <div class="timeline-date">2023 - 2024</div>
+            <div class="timeline-content">
+              <h3 class="timeline-title">JUNIOR DEVELOPER</h3>
+              <p class="timeline-company">TECH STARTUP</p>
+              <p class="timeline-desc">
+                Developed and maintained web applications using React and
+                TypeScript. Collaborated with designers to create pixel-perfect
+                UI implementations.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-item reveal">
+            <div class="timeline-date">2022 - 2023</div>
+            <div class="timeline-content">
+              <h3 class="timeline-title">WEB DEVELOPMENT BOOTCAMP</h3>
+              <p class="timeline-company">SELF-LEARNING</p>
+              <p class="timeline-desc">
+                Intensive training in HTML, CSS, JavaScript, and modern
+                frameworks. Completed 50+ projects and earned multiple
+                certifications.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills">
+      <div class="section-number">02</div>
+      <div class="skills-container">
+        <div class="section-label reveal">What I Do</div>
+        <h2 class="section-title reveal">EXPERTISE</h2>
+        <div class="skills-grid">
+          <div class="skill-item reveal" data-progress="95">
+            <div class="skill-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 452 520">
+                <path fill="#e34f26" d="M41 460L0 0h451l-41 460-185 52" />
+                <path fill="#ef652a" d="M226 472l149-41 35-394H226" />
+                <path
+                  fill="#ecedee"
+                  d="M226 208h-75l-5-58h80V94H84l15 171h127zm0 147l-64-17-4-45h-56l7 89 117 32z"
+                />
+                <path
+                  fill="#fff"
+                  d="M226 265h69l-7 73-62 17v59l115-32 16-174H226zm0-171v56h136l5-56z"
+                />
+              </svg>
+            </div>
+            <div class="skill-name">HTML</div>
+            <div class="skill-level">Expert</div>
+            <div class="skill-progress-bar">
+              <div class="skill-progress-fill"></div>
+            </div>
+          </div>
+          <div class="skill-item reveal" data-progress="90">
+            <div class="skill-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 452 520">
+                <path fill="#0c73b8" d="M41 460L0 0h451l-41 460-185 52" />
+                <path fill="#30a9dc" d="M226 472l149-41 35-394H226" />
+                <path
+                  fill="#ecedee"
+                  d="M226 208H94l5 57h127zm0-114H84l5 56h137zm0 261l-124-33 7 60 117 32z"
+                />
+                <path
+                  fill="#fff"
+                  d="M226 265l69 0-7 73-62 17v59l115-32 26-288H226v56h80l-6 58h-74z"
+                />
+              </svg>
+            </div>
+            <div class="skill-name">CSS</div>
+            <div class="skill-level">Expert</div>
+            <div class="skill-progress-bar">
+              <div class="skill-progress-fill"></div>
+            </div>
+          </div>
+          <div class="skill-item reveal" data-progress="85">
+            <div class="skill-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 630 630">
+                <rect width="630" height="630" fill="#f7df1e" />
+                <path
+                  d="m423.2 492.19c12.69 20.72 29.2 35.95 58.4 35.95 24.53 0 40.2-12.26 40.2-29.2 0-20.3-16.1-27.49-43.1-39.3l-14.8-6.35c-42.72-18.2-71.1-41-71.1-89.2 0-44.4 33.83-78.2 86.7-78.2 37.64 0 64.7 13.1 84.2 47.4l-46.1 29.6c-10.15-18.2-21.1-25.37-38.1-25.37-17.34 0-28.33 11-28.33 25.37 0 17.76 11 24.95 36.4 35.95l14.8 6.34c50.3 21.57 78.7 43.56 78.7 93 0 53.3-41.87 82.5-98.1 82.5-54.98 0-90.5-26.2-107.88-60.54zm-209.13 5.13c9.3 16.5 17.76 30.45 38.1 30.45 19.45 0 31.72-7.61 31.72-37.2v-201.3h59.2v202.1c0 61.3-35.94 89.2-88.4 89.2-47.4 0-74.85-24.53-88.81-54.075z"
+                />
+              </svg>
+            </div>
+            <div class="skill-name">JavaScript</div>
+            <div class="skill-level">Advanced</div>
+            <div class="skill-progress-bar">
+              <div class="skill-progress-fill"></div>
+            </div>
+          </div>
+          <div class="skill-item reveal" data-progress="80">
+            <div class="skill-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="-11.5 -10.23174 23 20.46348"
+              >
+                <circle cx="0" cy="0" r="2.05" fill="#61dafb" />
+                <g stroke="#61dafb" stroke-width="1" fill="none">
+                  <ellipse rx="11" ry="4.2" />
+                  <ellipse rx="11" ry="4.2" transform="rotate(60)" />
+                  <ellipse rx="11" ry="4.2" transform="rotate(120)" />
+                </g>
+              </svg>
+            </div>
+            <div class="skill-name">React</div>
+            <div class="skill-level">Advanced</div>
+            <div class="skill-progress-bar">
+              <div class="skill-progress-fill"></div>
+            </div>
+          </div>
+          <div class="skill-item reveal" data-progress="95">
+            <div class="skill-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                <line x1="8" y1="21" x2="16" y2="21"></line>
+                <line x1="12" y1="17" x2="12" y2="21"></line>
+              </svg>
+            </div>
+            <div class="skill-name">Responsive</div>
+            <div class="skill-level">Expert</div>
+            <div class="skill-progress-bar">
+              <div class="skill-progress-fill"></div>
+            </div>
+          </div>
+          <div class="skill-item reveal" data-progress="75">
+            <div class="skill-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
+                ></path>
+              </svg>
+            </div>
+            <div class="skill-name">UI/UX</div>
+            <div class="skill-level">Advanced</div>
+            <div class="skill-progress-bar">
+              <div class="skill-progress-fill"></div>
+            </div>
+          </div>
+          <div class="skill-item reveal" data-progress="80">
+            <div class="skill-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+                <path fill="#3178c6" d="M0 200V0h400v400H0" />
+                <path
+                  fill="#fff"
+                  d="M87.2 200.7V217h52v148h36.9V217h52v-16c0-9 0-16.3-.4-16.5 0-.3-31.7-.4-70.2-.4l-70 .3v16.4M247.6 164.8c-1.2.5-2.3 1.4-2.7 2-.3.5-.6 51.3-.6 113v112.1l2.3 2.3c1.3 1.3 2.6 2.4 3 2.4.3 0 9.8-5.4 21-12l20.3-12V196.4l.1-56.3-20.8 12c-11.4 6.5-21.2 12.3-21.8 12.7z"
+                />
+              </svg>
+            </div>
+            <div class="skill-name">TypeScript</div>
+            <div class="skill-level">Advanced</div>
+            <div class="skill-progress-bar">
+              <div class="skill-progress-fill"></div>
+            </div>
+          </div>
+          <div class="skill-item reveal" data-progress="85">
+            <div class="skill-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 54 33">
+                <path
+                  fill="#38bdf8"
+                  fill-rule="evenodd"
+                  d="M27 0c-7.2 0-11.7 3.6-13.5 10.8 2.7-3.6 5.85-4.95 9.45-4.05 2.054.513 3.522 2.004 5.147 3.653C30.744 13.09 33.808 16.2 40.5 16.2c7.2 0 11.7-3.6 13.5-10.8-2.7 3.6-5.85 4.95-9.45 4.05-2.054-.513-3.522-2.004-5.147-3.653C36.756 3.11 33.692 0 27 0zM13.5 16.2C6.3 16.2 1.8 19.8 0 27c2.7-3.6 5.85-4.95 9.45-4.05 2.054.514 3.522 2.004 5.147 3.653C17.244 29.29 20.308 32.4 27 32.4c7.2 0 11.7-3.6 13.5-10.8-2.7 3.6-5.85 4.95-9.45 4.05-2.054-.513-3.522-2.004-5.147-3.653C23.256 19.31 20.192 16.2 13.5 16.2z"
+                />
+              </svg>
+            </div>
+            <div class="skill-name">Tailwind</div>
+            <div class="skill-level">Advanced</div>
+            <div class="skill-progress-bar">
+              <div class="skill-progress-fill"></div>
+            </div>
+          </div>
+          <div class="skill-item reveal" data-progress="75">
+            <div class="skill-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 92 92">
+                <path
+                  fill="#f34f29"
+                  d="M90.156 41.965L50.036 1.848a5.918 5.918 0 0 0-8.372 0l-8.328 8.332 10.566 10.566a7.03 7.03 0 0 1 7.23 1.684 7.043 7.043 0 0 1 1.673 7.277l10.183 10.184a7.028 7.028 0 0 1 7.278 1.672 7.04 7.04 0 0 1 0 9.957 7.045 7.045 0 0 1-9.961 0 7.038 7.038 0 0 1-1.532-7.66l-9.5-9.497V59.36a7.04 7.04 0 0 1 1.86 11.29 7.04 7.04 0 0 1-9.957 0 7.04 7.04 0 0 1 0-9.958 7.034 7.034 0 0 1 2.308-1.539V33.926a7.001 7.001 0 0 1-2.308-1.535 7.049 7.049 0 0 1-1.516-7.7L29.242 14.273 1.734 41.777a5.918 5.918 0 0 0 0 8.371l40.12 40.118a5.918 5.918 0 0 0 8.371 0l39.934-39.934a5.925 5.925 0 0 0-.004-8.368"
+                />
+              </svg>
+            </div>
+            <div class="skill-name">Git</div>
+            <div class="skill-level">Advanced</div>
+            <div class="skill-progress-bar">
+              <div class="skill-progress-fill"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services">
+      <div class="section-number">03</div>
+      <div class="services-container">
+        <div class="section-label reveal">What I Offer</div>
+        <h2 class="section-title reveal">SERVICES</h2>
+        <div class="services-list">
+          <div class="service-item reveal">
+            <div class="service-number">01</div>
+            <div class="service-content">
+              <h3>WEB DEVELOPMENT</h3>
+              <p>
+                Custom websites built with cutting-edge technologies and
+                optimized for peak performance.
+              </p>
+            </div>
+            <div class="service-arrow">→</div>
+          </div>
+          <div class="service-item reveal">
+            <div class="service-number">02</div>
+            <div class="service-content">
+              <h3>RESPONSIVE DESIGN</h3>
+              <p>
+                Flawless experiences across all devices with mobile-first,
+                adaptive layouts.
+              </p>
+            </div>
+            <div class="service-arrow">→</div>
+          </div>
+          <div class="service-item reveal">
+            <div class="service-number">03</div>
+            <div class="service-content">
+              <h3>UI/UX DESIGN</h3>
+              <p>
+                Intuitive interfaces that captivate users and elevate brand
+                experiences.
+              </p>
+            </div>
+            <div class="service-arrow">→</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+
+    <section id="projects">
+      <div class="section-number">04</div>
+      <div class="projects-container">
+        <div class="section-label reveal">Selected Work</div>
+        <h2 class="section-title reveal">PROJECTS</h2>
+
+        <!-- Filter Buttons -->
+        <div class="project-filters reveal">
+          <button class="filter-btn active" data-filter="all">ALL</button>
+          <button class="filter-btn" data-filter="web">WEB APPS</button>
+          <button class="filter-btn" data-filter="design">DESIGN</button>
+          <button class="filter-btn" data-filter="landing">
+            LANDING PAGES
+          </button>
+        </div>
+
+        <div class="projects-grid">
+          <div class="project-card reveal" data-category="web">
+            <div class="project-bg">
+              <svg
+                viewBox="0 0 200 200"
+                xmlns="http://www.w3.org/2000/svg"
+                style="width: 120px; height: 120px"
+              >
+                <rect
+                  x="20"
+                  y="40"
+                  width="160"
+                  height="120"
+                  rx="8"
+                  fill="none"
+                  stroke="rgba(255,255,255,0.3)"
+                  stroke-width="3"
+                />
+                <line
+                  x1="20"
+                  y1="70"
+                  x2="180"
+                  y2="70"
+                  stroke="rgba(255,255,255,0.3)"
+                  stroke-width="3"
+                />
+                <circle cx="35" cy="55" r="4" fill="rgba(255,255,255,0.3)" />
+                <circle cx="50" cy="55" r="4" fill="rgba(255,255,255,0.3)" />
+                <circle cx="65" cy="55" r="4" fill="rgba(255,255,255,0.3)" />
+                <rect
+                  x="40"
+                  y="90"
+                  width="50"
+                  height="50"
+                  rx="4"
+                  fill="rgba(255,255,255,0.2)"
+                />
+                <rect
+                  x="110"
+                  y="90"
+                  width="50"
+                  height="50"
+                  rx="4"
+                  fill="rgba(255,255,255,0.2)"
+                />
+              </svg>
+            </div>
+            <div class="project-overlay">
+              <h3 class="project-title">PORTFOLIO</h3>
+              <p class="project-desc">Modern responsive portfolio website</p>
+              <a href="#" class="project-link">View Project</a>
+            </div>
+          </div>
+
+          <div class="project-card reveal" data-category="landing">
+            <div class="project-bg">
+              <svg
+                viewBox="0 0 200 200"
+                xmlns="http://www.w3.org/2000/svg"
+                style="width: 120px; height: 120px"
+              >
+                <polygon
+                  points="100,30 130,90 170,90 140,120 155,170 100,140 45,170 60,120 30,90 70,90"
+                  fill="none"
+                  stroke="rgba(255,255,255,0.3)"
+                  stroke-width="3"
+                />
+                <circle cx="100" cy="100" r="15" fill="rgba(255,255,255,0.2)" />
+              </svg>
+            </div>
+            <div class="project-overlay">
+              <h3 class="project-title">LANDING PAGE</h3>
+              <p class="project-desc">Product landing with animations</p>
+              <a href="#" class="project-link">View Project</a>
+            </div>
+          </div>
+
+          <div class="project-card reveal" data-category="web">
+            <div class="project-bg">
+              <svg
+                viewBox="0 0 200 200"
+                xmlns="http://www.w3.org/2000/svg"
+                style="width: 120px; height: 120px"
+              >
+                <rect
+                  x="30"
+                  y="30"
+                  width="140"
+                  height="140"
+                  rx="8"
+                  fill="none"
+                  stroke="rgba(255,255,255,0.3)"
+                  stroke-width="3"
+                />
+                <line
+                  x1="30"
+                  y1="60"
+                  x2="170"
+                  y2="60"
+                  stroke="rgba(255,255,255,0.3)"
+                  stroke-width="3"
+                />
+                <line
+                  x1="70"
+                  y1="60"
+                  x2="70"
+                  y2="170"
+                  stroke="rgba(255,255,255,0.3)"
+                  stroke-width="3"
+                />
+              </svg>
+            </div>
+            <div class="project-overlay">
+              <h3 class="project-title">DASHBOARD</h3>
+              <p class="project-desc">Dark-themed analytics dashboard</p>
+              <a href="#" class="project-link">View Project</a>
+            </div>
+          </div>
+
+          <div class="project-card reveal" data-category="design">
+            <div class="project-bg">
+              <svg
+                viewBox="0 0 200 200"
+                xmlns="http://www.w3.org/2000/svg"
+                style="width: 120px; height: 120px"
+              >
+                <rect
+                  x="40"
+                  y="40"
+                  width="120"
+                  height="120"
+                  rx="8"
+                  fill="none"
+                  stroke="rgba(255,255,255,0.3)"
+                  stroke-width="3"
+                />
+                <line
+                  x1="60"
+                  y1="70"
+                  x2="140"
+                  y2="70"
+                  stroke="rgba(255,255,255,0.3)"
+                  stroke-width="2"
+                />
+                <circle cx="100" cy="55" r="8" fill="rgba(255,255,255,0.2)" />
+              </svg>
+            </div>
+            <div class="project-overlay">
+              <h3 class="project-title">BUSINESS SITE</h3>
+              <p class="project-desc">Corporate website design</p>
+              <a href="#" class="project-link">View Project</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials">
+      <div class="section-number">05</div>
+      <div class="testimonials-container">
+        <div class="section-label reveal">What Clients Say</div>
+        <h2 class="section-title reveal">TESTIMONIALS</h2>
+
+        <div class="testimonials-slider">
+          <div class="testimonial-track">
+            <div class="testimonial-card reveal">
+              <div class="testimonial-quote">"</div>
+              <p class="testimonial-text">
+                Kareem delivered an exceptional website that exceeded our
+                expectations. His attention to detail and creative approach made
+                the entire process smooth and enjoyable.
+              </p>
+              <div class="testimonial-author">
+                <div class="author-avatar">JD</div>
+                <div class="author-info">
+                  <div class="author-name">JOHN DOE</div>
+                  <div class="author-title">CEO, Tech Startup</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="testimonial-card reveal">
+              <div class="testimonial-quote">"</div>
+              <p class="testimonial-text">
+                Working with Kareem was a game-changer for our business. The
+                website he built is not only beautiful but also highly
+                functional and optimized for conversions.
+              </p>
+              <div class="testimonial-author">
+                <div class="author-avatar">SK</div>
+                <div class="author-info">
+                  <div class="author-name">SARAH KHAN</div>
+                  <div class="author-title">Marketing Director</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="testimonial-card reveal">
+              <div class="testimonial-quote">"</div>
+              <p class="testimonial-text">
+                Professional, creative, and incredibly skilled. Kareem
+                transformed our outdated website into a modern, responsive
+                masterpiece. Highly recommended!
+              </p>
+              <div class="testimonial-author">
+                <div class="author-avatar">MA</div>
+                <div class="author-info">
+                  <div class="author-name">MIKE ANDERSON</div>
+                  <div class="author-title">Founder, Creative Agency</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-nav">
+            <button class="testimonial-prev">←</button>
+            <button class="testimonial-next">→</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+      <div class="section-number">05</div>
+      <div class="contact-container">
+        <h2 class="contact-title reveal">LET'S CREATE<br />SOMETHING GREAT</h2>
+        <a href="mailto:kareem@example.com" class="contact-email reveal"
+          >aymankareemcode@gmail.com</a
+        >
+
+        <form class="contact-form reveal">
+          <input type="text" placeholder="YOUR NAME" required />
+          <input type="email" placeholder="YOUR EMAIL" required />
+          <textarea rows="5" placeholder="YOUR MESSAGE" required></textarea>
+          <button type="submit">SEND MESSAGE</button>
+        </form>
+
+        <div class="social-links reveal">
+          <a
+            href="https://github.com/Kareem-Abdelkhalek"
+            target="_blank"
+            class="social-icon"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+            >
+              <path
+                d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
+              />
+            </svg>
+            <span>GITHUB</span>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/kareem-abdelkhalek-0a8777382/"
+            target="_blank"
+            class="social-icon"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+            >
+              <path
+                d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"
+              />
+            </svg>
+            <span>LINKEDIN</span>
+          </a>
+          <a
+            href="https://www.instagram.com"
+            target="_blank"
+            class="social-icon"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+            >
+              <path
+                d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"
+              />
+            </svg>
+            <span>INSTAGRAM</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>© 2025 KAREEM. ALL RIGHTS RESERVED.</p>
+      <p>DESIGNED & DEVELOPED WITH PASSION</p>
+    </footer>
+    <script src="Scripts/menu.js"></script>
+    <script src="Scripts/activeNav.js"></script>
+    <script src="Scripts/reveal.js"></script>
+    <script src="Scripts/smoothScroll.js"></script>
+    <script src="Scripts/loader.js"></script>
+    <script src="Scripts/progressBar.js"></script>
+    <script src="Scripts/typing.js"></script>
+    <script src="Scripts/themeToggle.js"></script>
+    <script src="Scripts/particles.js"></script>
+    <script src="Scripts/projectFilters.js"></script>
+    <script src="Scripts/testimonials.js"></script>
+    <!-- <script src="Scripts/contactForm.js"></script> -->
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-to-top" id="scrollToTop">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+      >
+        <polyline points="18 15 12 9 6 15"></polyline>
+      </svg>
+    </button>
+
+    <script src="Scripts/scrollToTop.js"></script>
+    <!-- Project Modal -->
+    <div class="project-modal" id="projectModal">
+      <div class="modal-overlay"></div>
+      <div class="modal-content">
+        <button class="modal-close" id="modalClose">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+        <div class="modal-body">
+          <h2 class="modal-title" id="modalTitle">PROJECT TITLE</h2>
+          <p class="modal-category" id="modalCategory">WEB APP</p>
+          <p class="modal-description" id="modalDescription">
+            Full project description goes here...
+          </p>
+          <div class="modal-tech">
+            <h3>TECHNOLOGIES USED:</h3>
+            <div class="modal-tech-list" id="modalTechList"></div>
+          </div>
+          <div class="modal-links">
+            <a href="#" class="modal-btn" id="modalLiveLink" target="_blank"
+              >VIEW LIVE</a
+            >
+            <a
+              href="#"
+              class="modal-btn modal-btn-secondary"
+              id="modalGithubLink"
+              target="_blank"
+              >VIEW CODE</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="Scripts/projectModal.js"></script>
+  </body>
+</html>
